@@ -14,7 +14,11 @@ echo $faker->bankAccountNumber(); // "SE5018548608468284909192"
 echo $faker->personalIdentityNumber(); // '950910-0799'
 
 // Since the numbers are different for male and female persons, optionally you can specify gender.
-echo $faker->personalIdentityNumber('female'); // '950910-0781'
+echo $faker->personalIdentityNumber(null, 'female'); // '950910-0781'
+
+// To include century 
+echo $faker->personalIdentityNumber(null, null, true); // '19950910-0781'
+
 ```
 
 ### `Faker\Provider\sv_SE\MobileNumber`
