@@ -41,7 +41,7 @@ The [Swedish Post and Telecom Authority (PTS) has reserved a series of numbers](
 
 ```php
 //Publishable Swedish mobile phone number series
-echo '070-1740' . $faker->faker->numberBetween(605, 699);
+echo '070-1740' . $faker->numberBetween(605, 699);
 
 //Publishable Swedish landline phone number series
 echo '031-3900' . $faker->numberBetween(600, 699);
